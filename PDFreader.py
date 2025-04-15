@@ -1,7 +1,8 @@
 
 # Will search your PDF file for the pages with the specified word in it
-
+# Make sure to get rid of "" when putting in the path
 import PyPDF2
+x = "  sdf"
 #You will need to use pip PyPDF2 to use this program 
 def search_string_in_pdf(pdf_path, search_string):
     """Searches for a specific string in a PDF file and prints the page numbers where it's found."""
@@ -24,9 +25,9 @@ def search_string_in_pdf(pdf_path, search_string):
 
 # Example usage
 pdf_file_path =  str(input( r"Enter your PDF file path way: "))
-string_to_search = str(input("Enter what you want to find in this PDF: "))
-search_string_in_pdf(pdf_file_path, string_to_search)
+while x != "":
+    string_to_search = str(input("Enter what you want to find in this PDF: "))
+    search_string_in_pdf(pdf_file_path, string_to_search)
+    x = input("Press space to stop, anything else to continue: ")
 
-ifs = "n"
-while ifs == "n":
-    ifs = input("Press space: ")
+
