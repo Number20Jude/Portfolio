@@ -23,7 +23,7 @@ def search_string_in_pdf(pdf_path, search_string):
     except Exception as e:
         print(f"An error occurred: {e}")
 
-# Example usage
+
 pdf_file_path =  str(input( r"Enter your PDF file path way: "))
 while x != "":
     string_to_search = str(input("Enter what you want to find in this PDF: "))
