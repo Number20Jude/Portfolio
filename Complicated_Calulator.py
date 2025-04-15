@@ -1,3 +1,6 @@
+#+_ --> +-
+# */ multiplication and subtraction
+#^| powers and roots
 def group_adjacent_numbers(char_list):
     result = []
     current = ''
